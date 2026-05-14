@@ -27,3 +27,12 @@ This is a robot that fetches stuff and brings it back to you.
 5. For all the servos, also connect all their 5vs to the 5vs row
 6. Then for each servo, connect it to their own pwm pin.
 ## The wiring for the wheels
+1. Connect the battery 5v to the middle pin of the l298n where it has 3 Screw terminal blocks.
+2. Next to it, connect the GND of the raspberry pi and the battery gnd
+3. On the other side of it, connect the raspberry pi 5v to it.
+4. Screwdrive them all in, and make sure that they are secure
+5. There are 2 Screw terminal blocks on each side of the l298n, and each one is for each motor.
+6. Put 1 wire in each one of the Screw terminal blocks, and screwdrive them in
+7. Then, connect those wires to each of the motors, with the ones on the same side going to the same motor.
+8. Now, connect all the open wired pins to the raspberry pi.
+   #### All of the wires are done now.
