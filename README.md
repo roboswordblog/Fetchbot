@@ -1,6 +1,6 @@
 # Fetchbot
 This is a robot that fetches stuff and brings it back to you.
-### This will be split into 3 parts:
+### This will be split into 5 parts:
   1. What is the purpose of this
   2. What I used to make it
   3. How did I make this
