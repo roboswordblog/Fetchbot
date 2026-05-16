@@ -14,7 +14,17 @@ void setup(){
   servo4.attach(9);
   servo5.attach(10);
   servo6.attach(11);
+  //servo3.write(0);
+  //servo2.write(0);
+  servo3.write(-90);
+  servo2.write(-90);
+  servo1.write(-90);
 }
+void lunge(){
+  servo3.write(90);
+  servo2.write(90);
+
+  }
 void loop(){
-  
+  delay(2000);
 }
