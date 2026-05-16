@@ -9,8 +9,11 @@ Servo servo6;
 
 void setup(){
   servo1.attach(3);
-  servo2.attach();
-  servo3.attach();
+  servo2.attach(5);
+  servo3.attach(6);
+  servo4.attach(9);
+  servo5.attach(10);
+  servo6.attach(11);
 }
 void loop(){
   
