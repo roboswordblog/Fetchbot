@@ -25,6 +25,15 @@ void lunge(){
   servo2.write(90);
 
   }
+  void down(int d){
+    if (d <= 0){
+      d = 60;
+      }
+    servo3.write(-90);
+    servo2.write(60);
+    
+    }
 void loop(){
   delay(2000);
+  down(0);
 }
