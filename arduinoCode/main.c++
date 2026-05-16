@@ -8,18 +8,18 @@ Servo servo5;
 
 bool downOrUp = false;
 void setup() {
-  // servo1.attach(3);
+  servo1.attach(3);
   servo2.attach(5);
   servo3.attach(6);
   servo4.attach(9);
-  servo5.attach(10);
-  // servo3.write(0);
-  // servo2.write(0);
+ // servo5.attach(10);
+  
   servo3.write(-90);
   servo2.write(-90);
-  servo5.write(0);
-  // servo1.write(-45);
+  servo5.write(150);
+  servo1.write(-45);
   servo4.write(45);
+  
 }
 void lunge() {
   servo3.write(90);
@@ -41,11 +41,5 @@ void claw() {}
 
 void loop() {
   delay(2000);
-  down(40);
-  moveAngleEntire(40);
-  if (not downOrUp) {
-    servo3.write(-90);
-    servo2.write(-90);
-  }
-  // twistClaw(0);
+
 }
