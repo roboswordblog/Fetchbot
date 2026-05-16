@@ -5,20 +5,22 @@ Servo servo2;
 Servo servo3;
 Servo servo4;
 Servo servo5;
-Servo servo6;
 
+bool downOrUp = false;
 void setup(){
-  servo1.attach(3);
+  //servo1.attach(3);
   servo2.attach(5);
   servo3.attach(6);
   servo4.attach(9);
   servo5.attach(10);
-  servo6.attach(11);
   //servo3.write(0);
   //servo2.write(0);
   servo3.write(-90);
   servo2.write(-90);
-  servo1.write(-90);
+  servo5.write(0);
+ // servo1.write(-45);
+ servo4.write(45);
+
 }
 void lunge(){
   servo3.write(90);
@@ -26,6 +28,7 @@ void lunge(){
 
   }
   void down(int d){
+    downOrUp = true;
     if (d <= 0){
       d = 60;
       }
@@ -33,7 +36,24 @@ void lunge(){
     servo2.write(60);
     
     }
+    
+    void moveAngleEntire(int angle){
+      servo5.write(angle);
+      }
+      
+      void twistClaw(int angle){
+        servo4.write(angle);
+        }
+void claw(){
+      }
+      
 void loop(){
   delay(2000);
-  down(0);
+ down(40);
+  moveAngleEntire(40);
+  if (not downOrUp){
+    servo3.write(-90);
+  servo2.write(-90);
+    }
+ // twistClaw(0);
 }
